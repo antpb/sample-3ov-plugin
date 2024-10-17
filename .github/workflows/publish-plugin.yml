@@ -19,12 +19,39 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Create deployment directory and install axios
+    - name: Install axios globally
+      run: npm install -g axios
+
+    - name: Publish plugin
       run: |
-        mkdir deployment
-        cd deployment
-        npm init -y
-        npm install axios
+        node -e "
+        const fs = require('fs');
+        const path = require('path');
+        const axios = require('axios');
+        
+        // Your publish-plugin.js content goes here
+        // Make sure to replace any 'require('./someFile')' with 'require(path.join(process.cwd(), 'someFile'))'
+        
+        // Example:
+        const API_URL = 'https://cfdb.sxpdigital.workers.dev';
+        const PLUGIN_NAME = process.env.PLUGIN_NAME;
+        const ZIP_FILE = path.join(process.cwd(), process.env.ZIP_FILE);
+        const JSON_FILE = path.join(process.cwd(), process.env.JSON_FILE);
+        const ASSETS_DIR = path.join(process.cwd(), process.env.ASSETS_DIR);
+        const AUTHOR_INFO = path.join(process.cwd(), process.env.AUTHOR_INFO);
+
+        async function login() {
+          try {
+            const response = await axios.post(`${API_URL}/login`, { 
+              email: process.env.EMAIL,
+              password: process.env.PASSWORD,
+            });
+            return response.data.access_token;
+          } catch (error) {
+            console.error('Login failed:', error.response?.data || error.message);
+            throw error;
+          }
+        }
 
     - name: Copy publishing script
       run: cp .github/scripts/publish-plugin.js deployment/
