@@ -3,12 +3,11 @@ const path = require('path');
 const axios = require('axios');
 
 const API_URL = 'https://cfdb.sxpdigital.workers.dev';
-const API_KEY = process.env.API_KEY;
 const PLUGIN_NAME = process.env.PLUGIN_NAME;
-const ZIP_FILE = process.env.ZIP_FILE;
-const JSON_FILE = process.env.JSON_FILE;
-const ASSETS_DIR = process.env.ASSETS_DIR;
-const AUTHOR_INFO = process.env.AUTHOR_INFO;
+const ZIP_FILE = path.resolve(process.env.ZIP_FILE);
+const JSON_FILE = path.resolve(process.env.JSON_FILE);
+const ASSETS_DIR = path.resolve(process.env.ASSETS_DIR);
+const AUTHOR_INFO = path.resolve(process.env.AUTHOR_INFO);
 
 async function login() {
   try {
