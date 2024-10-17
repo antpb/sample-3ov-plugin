@@ -1,0 +1,31 @@
+{
+	"username": "devdude",
+	"email": "anthony+devdude@xpportal.io",
+	"avatar_url": "https://avatars.sxp.digital/avatars/6b9831e6-408b-4eae-9c09-3ba2b30669b7/thumb/pfp.webp?v=01729132178143",
+	"bio": "Creator of XR Chess Plugin - Just a dude in the world.",
+	"member_since": "2024-03-08",
+	"account_type": "comped",
+	"website": "https://dude.com",
+	"twitter": "antpb",
+	"github": "antpb",
+	"plugins": [
+	  {
+		"slug": "xr-publisher",
+		"name": "XR Publisher",
+		"short_description": "Publish XR experiences directly from WordPress",
+		"icon": "https://plugins.sxp.digital/e188bdf1-1cad-4a40-b8d8-fa2a354beea0/xr-publisher/icon-256x256.jpg",
+		"version": "1.2.0",
+		"rating": 4.8,
+		"active_installs": 5000
+	  },
+	  {
+		"slug": "web3-integrator",
+		"name": "Web3 Integrator",
+		"short_description": "Seamlessly integrate web3 functionalities into your WordPress site",
+		"icon": "https://plugins.sxp.digital/e188bdf1-1cad-4a40-b8d8-fa2a354beea0/web3-integrator/icon-256x256.jpg",
+		"version": "0.9.5",
+		"rating": 4.5,
+		"active_installs": 3200
+	  }
+	]
+  }

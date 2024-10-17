@@ -1,0 +1,45 @@
+[
+  {
+    "name": "XR Chess Block",
+    "slug": "xr-chess-block",
+    "version": "0.1",
+    "author": "antpb",
+    "author_profile": "https://app.xr.foundation/plugins/e188bdf1-1cad-4a40-b8d8-fa2a354beea0",
+    "requires": "5.0",
+    "tested": "6.7",
+    "requires_php": "7.2",
+    "rating": 0,
+    "num_ratings": 0,
+    "support_threads": 0,
+    "support_threads_resolved": 0,
+    "active_installs": 1,
+    "downloaded": 0,
+    "last_updated": "2024-10-17 12:00pm GMT",
+    "added": "2024-10-17",
+    "homepage": "https://xrpublisher.com/",
+    "short_description": "Enables AI computer chess games in a block that extends the XR Publisher plugin!",
+	"description": "<p>A This plugin adds a 3D chess block to WordPress sites using the 3OV plugin. It allows users to play chess against an AI opponent. The plugin requires an OpenAI API key, which can be entered in the settings panel. Compatible with XR Publisher's standard mode with VR to come!</p>\n",
+    "download_link": "https://plugins.sxp.digital/e188bdf1-1cad-4a40-b8d8-fa2a354beea0/xr-chess-block/xr-chess-block.zip",
+	"banner": "https://plugins.sxp.digital/e188bdf1-1cad-4a40-b8d8-fa2a354beea0/xr-chess-block/banner-1500x620.jpg",
+    "tags": {
+      "tag1": "metaverse",
+      "tag2": "virtual reality"
+    },
+    "donate_link": "https://xrpublisher.com",
+    "contributors": {
+      "yourname": {
+        "profile": "https://app.xr.foundation/plugins/e188bdf1-1cad-4a40-b8d8-fa2a354beea0",
+        "avatar": "https://avatars.sxp.digital/avatars/49e41600-0977-459e-b749-d7510edb51fb/thumb/pfp.webp",
+        "display_name": "antpb"
+      }
+    },
+    "icons": {
+      "1x": "https://plugins.sxp.digital/e188bdf1-1cad-4a40-b8d8-fa2a354beea0/xr-chess-block/icon-256x256.jpg",
+      "2x": "https://plugins.sxp.digital/e188bdf1-1cad-4a40-b8d8-fa2a354beea0/xr-chess-block/icon-256x256.jpg"
+    },
+    "source": {
+	  "name": "SXP Digital",
+	  "url": "https://plugins.sxp.digital"
+	}
+  }
+]
