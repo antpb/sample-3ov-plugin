@@ -1,22 +1,18 @@
 {
-    "slug": "four-object-viewer",
+    "slug": "xr-chess-block",
     "pluginId": 166,
     "buildId": 172,
     "entryPoints": {
-        "adminPages": [
-            "four-object-viewer-settings"
-        ],
         "blocks": [
-            "four-portal-block"
+            "xr-chess-block"
         ]
     },
     "buildIncludes": [
-        "four-object-viewer.php",
+        "xr-chess-block.php",
         "readme.txt",
         "php",
         "vendor",
         "build",
-        "blocks/four-portal-block/init.php",
-        "admin/four-object-viewer-settings/init.php"
+        "blocks/xr-chess-block/init.php"
     ]
 }

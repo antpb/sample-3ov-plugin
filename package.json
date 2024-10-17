@@ -1,5 +1,5 @@
 {
-    "name": "@antpb/four-object-viewer",
+    "name": "@antpb/xr-chess-block",
     "private": true,
     "version": "0.6.3",
     "license": "GPL-2.0-or-later",
@@ -8,6 +8,7 @@
         "test": "yarn test:unit",
         "test:unit": "wp-scripts test-unit-js",
         "build": "wp-scripts build",
+		"build:free": "wp-scripts build && node package.js free",
         "test:ci": "wp-scripts test-unit-js --passWithNoTests",
         "format:js": "wp-scripts format-js",
         "lint:css": "wp-scripts lint-style",
@@ -15,7 +16,7 @@
         "start": "wp-scripts start"
     },
     "devDependencies": {
-        "@babel/core": "^7",
+        "@babel/core": "^7.19.3",
         "@testing-library/react": "^12",
         "@wordpress/scripts": "^16",
         "airtap": "^4.0.4",
@@ -29,6 +30,9 @@
         "tinyify": "^3.1.0"
     },
     "dependencies": {
+        "@babel/plugin-proposal-optional-chaining": "^7.18.9",
+        "@babel/preset-env": "^7.19.3",
+        "@babel/preset-react": "^7.18.6",
         "@pixiv/three-vrm": "1.0.0-beta.17",
         "@react-three/a11y": "2.2.4",
         "@react-three/drei": "^8.7.4",
@@ -41,7 +45,9 @@
         "@wordpress/element": "^3",
         "@wordpress/i18n": "^4",
         "array-buffer-to-hex": "^1.0.0",
+        "babel-loader": "^8.2.5",
         "base64-arraybuffer": "^1.0.2",
+        "chess.js": "^1.0.0-beta.6",
         "convert-hex": "^0.1.0",
         "events": "^3.3.0",
         "get-browser-rtc": "^1.1.0",
@@ -49,6 +55,7 @@
         "glslify-loader": "^2.0.0",
         "r3f-perf": "4.9.1",
         "raw-loader": "^4.0.2",
+        "react-chessboard": "^4.3.1",
         "three": "0.144.0",
         "three-icosa": "^0.4.0",
         "three-omi": "^0.1.5",
