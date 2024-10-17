@@ -1,18 +1,18 @@
 {
-    "slug": "three-chess-block",
+    "slug": "xr-chess-block",
     "pluginId": 166,
     "buildId": 172,
     "entryPoints": {
         "blocks": [
-            "three-chess-block"
+            "xr-chess-block"
         ]
     },
     "buildIncludes": [
-        "three-chess-block.php",
+        "xr-chess-block.php",
         "readme.txt",
         "php",
         "vendor",
         "build",
-        "blocks/three-chess-block/init.php"
+        "blocks/xr-chess-block/init.php"
     ]
 }

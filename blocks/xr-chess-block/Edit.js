@@ -18,7 +18,7 @@ import {
 	TextControl
 } from "@wordpress/components";
 import { more } from "@wordpress/icons";
-import { ThreeChessBlock } from "./three-chess-block-editor";
+import { ThreeChessBlock } from "./xr-chess-block-editor";
 
 export default function Edit({ attributes, setAttributes, isSelected, clientId }) {
 	window.addEventListener('registerEditorPluginReady', function() {
@@ -106,22 +106,15 @@ export default function Edit({ attributes, setAttributes, isSelected, clientId }
 		);
 	};
 
-	function handleClick(objectURL) {
-		if (objectURL) {
-			onImageSelect(objectURL);
-		}
-		console.log("fail", objectURL);
-	}
-
 	return (
 		<div {...useBlockProps()}>
 			<InspectorControls key="setting">
 				<Panel 
 					header="Settings"
-					className="three-object-environment-edit-container three-object-viewer-edit-panel"
+					className="three-object-environment-edit-container xr-publisher-edit-panel"
 				>
 					<PanelBody
-						title="Three Chess Block Settings"
+						title="XR Chess Block Settings"
 						icon={more}
 						initialOpen={true}
 					>
@@ -150,7 +143,7 @@ export default function Edit({ attributes, setAttributes, isSelected, clientId }
 						</PanelRow>
 						<PanelRow>
 							<legend className="blocks-base-control__label">
-								{__("Rotation", "three-object-viewer")}
+								{__("Rotation", "xr-publisher")}
 							</legend>
 						</PanelRow>
 						<PanelRow>
@@ -178,25 +171,25 @@ export default function Edit({ attributes, setAttributes, isSelected, clientId }
 						</PanelRow>
 						<PanelRow>
 							<legend className="blocks-base-control__label">
-								{__("White Squares Color", "three-object-viewer")}
+								{__("White Squares Color", "xr-publisher")}
 							</legend>
 						</PanelRow>
 						<PanelRow>
 							<ColorPalette
 								value={attributes.colorWhite}
-								label={__( "White Squares Color", "three-object-viewer" )}
+								label={__( "White Squares Color", "xr-publisher" )}
 								onChange={onChangeWhiteColor}
 							/>
 						</PanelRow>
 						<PanelRow>
 							<legend className="blocks-base-control__label">
-								{__("White Squares Color", "three-object-viewer")}
+								{__("White Squares Color", "xr-publisher")}
 							</legend>
 						</PanelRow>
 						<PanelRow>
 							<ColorPalette
 								value={attributes.colorBlack}
-								label={__( "Black Squares Color", "three-object-viewer" )}
+								label={__( "Black Squares Color", "xr-publisher" )}
 								onChange={onChangeBlackColor}
 							/>
 						</PanelRow>
@@ -205,8 +198,8 @@ export default function Edit({ attributes, setAttributes, isSelected, clientId }
 			</InspectorControls>
 			{isSelected ? (
 				<>
-						<div className="three-object-viewer-inner">
-							<div className="three-object-viewer-inner-edit-container">
+						<div className="xr-publisher-inner">
+							<div className="xr-publisher-inner-edit-container">
 								<svg
 									className="custom-icon custom-icon-cube"
 									viewBox="0 0 40 40"
@@ -218,15 +211,15 @@ export default function Edit({ attributes, setAttributes, isSelected, clientId }
 									</g>
 								</svg>
 								<p>
-									<b>Three Chess Block</b>
+									<b>XR Chess Block</b>
 								</p>
 							</div>
 						</div>
 				</>
 			) : (
 				<>
-					<div className="three-object-viewer-inner">
-						<div className="three-object-viewer-inner-edit-container">
+					<div className="xr-publisher-inner">
+						<div className="xr-publisher-inner-edit-container">
 							<svg
 								className="custom-icon custom-icon-cube"
 								viewBox="0 0 40 40"
@@ -238,7 +231,7 @@ export default function Edit({ attributes, setAttributes, isSelected, clientId }
 								</g>
 							</svg>
 							<p>
-								<b>Three Chess Block</b>
+								<b>XR Chess Block</b>
 							</p>
 						</div>
 					</div>

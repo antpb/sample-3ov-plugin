@@ -1,5 +1,5 @@
 {
-    "name": "@antpb/three-chess-block",
+    "name": "@antpb/xr-chess-block",
     "private": true,
     "version": "0.6.3",
     "license": "GPL-2.0-or-later",
@@ -8,6 +8,7 @@
         "test": "yarn test:unit",
         "test:unit": "wp-scripts test-unit-js",
         "build": "wp-scripts build",
+		"build:free": "wp-scripts build && node package.js free",
         "test:ci": "wp-scripts test-unit-js --passWithNoTests",
         "format:js": "wp-scripts format-js",
         "lint:css": "wp-scripts lint-style",

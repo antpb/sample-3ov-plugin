@@ -1,6 +1,6 @@
 {
-    "name": "three-object-viewer/three-chess-block",
-    "title": "Three Chess Block",
+    "name": "xr-publisher/xr-chess-block",
+    "title": "XR Chess Block",
     "description": "A chess game for your environment",
     "attributes": {
         "positionX": {
@@ -37,13 +37,13 @@
 		}
     },
     "category": "design",
-    "parent":  [ "three-object-viewer/environment" ],
+    "parent":  [ "xr-publisher/environment" ],
     "apiVersion": 2,
     "supports": {
         "html": false,
         "multiple": false
     },
-    "editorScript": "file:../../build/block-three-chess-block.js",
-	"editorStyle": "file:../../build/block-three-chess-block.css",
-	"style": "file:../../build/block-three-chess-block.css"
+    "editorScript": "file:../../build/block-xr-chess-block.js",
+	"editorStyle": "file:../../build/block-xr-chess-block.css",
+	"style": "file:../../build/block-xr-chess-block.css"
 }

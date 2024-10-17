@@ -40,7 +40,7 @@ function threecustomblock_enqueue_threeobjectloaderinit() {
 // Localize data for the frontend.
 add_action( 'enqueue_block_assets', function () {
     wp_enqueue_script(
-        'three-chess-block',
+        'xr-publisher/xr-chess-block',
         plugins_url( '../build/assets/js/blocks.frontend.js', __FILE__ ),
         array( 'wp-blocks', 'wp-element', 'wp-editor' )
     );
@@ -57,7 +57,7 @@ add_action( 'enqueue_block_assets', function () {
     }
 
     wp_localize_script(
-        'three-chess-block',
+        'xr-publisher/xr-chess-block',
         'threeCustomBlock',
         $localize_data
     );
@@ -67,7 +67,7 @@ add_filter( 'three-object-environment-inner-allowed-blocks', __NAMESPACE__ . '\c
 
 // Environment inner blocks
 function custom_plugin_allow_inner( $allowed_blocks ) {
-    $new_blocks[] = 'three-object-viewer/three-chess-block';
+    $new_blocks[] = 'xr-publisher/xr-chess-block';
     $allowed_blocks = array_merge($allowed_blocks, $new_blocks );
    return $allowed_blocks;
 }
@@ -117,7 +117,7 @@ add_action( 'rest_api_init', function () {
 	  ];
 
 	$postData = [
-	  'model' => "gpt-4-vision-preview",
+	  'model' => "gpt-4o",
 	  'messages' => $messages,
 	  'temperature' => 0.5,
 	  'max_tokens' => 150
@@ -144,6 +144,8 @@ add_action( 'rest_api_init', function () {
 	  $suggestedMove = trim($gptData['choices'][0]['message']['content']);
 	} else {
 	  $suggestedMove = "No move suggested.";
+	  // stringify the response to debug
+	  $suggestedMove = json_encode($gptData);
 	}
   
 	$wittyComment = "Let's make a strategic move."; // This could be dynamic based on the response

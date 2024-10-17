@@ -22,4 +22,5 @@ vendor/
 vendor
 wordpress
 build
+plugin-build/*
 .phpunit.result.cache

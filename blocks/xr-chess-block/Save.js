@@ -5,30 +5,30 @@ export default function save({ attributes }) {
 	return (
 		<div {...useBlockProps.save()}>
 			<>
-			<div id="three-chess-block-container"></div>
-				<div className="three-object-three-app-three-chess-block">
-					<p className="three-chess-block-positionX">
+			<div id="xr-chess-block-container"></div>
+				<div className="three-object-three-app-xr-chess-block">
+					<p className="xr-chess-block-positionX">
 						{attributes.positionX}
 					</p>
-					<p className="three-chess-block-positionY">
+					<p className="xr-chess-block-positionY">
 						{attributes.positionY}
 					</p>
-					<p className="three-chess-block-positionZ">
+					<p className="xr-chess-block-positionZ">
 						{attributes.positionZ}
 					</p>
-					<p className="three-chess-block-rotationX">
+					<p className="xr-chess-block-rotationX">
 						{attributes.rotationX}
 					</p>
-					<p className="three-chess-block-rotationY">
+					<p className="xr-chess-block-rotationY">
 						{attributes.rotationY}
 					</p>
-					<p className="three-chess-block-rotationZ">
+					<p className="xr-chess-block-rotationZ">
 						{attributes.rotationZ}
 					</p>
-					<p className="three-chess-block-colorWhite">
+					<p className="xr-chess-block-colorWhite">
 						{attributes.colorWhite}
 					</p>
-					<p className="three-chess-block-colorBlack">
+					<p className="xr-chess-block-colorBlack">
 						{attributes.colorBlack}
 					</p>
 				</div>
